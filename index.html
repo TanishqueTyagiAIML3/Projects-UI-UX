@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodies</title>
+    <style>
+      body{
+        box-sizing: border-box;
+      }
+        main{
+          display: grid;
+          grid-template-columns: auto;
+          width:fit-content;
+        }
+        #header{
+            grid-column-start: 1;
+            background-color: black;
+            grid-column-end: 2;
+            color: white;
+            display:grid;
+            grid-template-columns: auto auto auto auto auto auto auto auto auto;
+            position: sticky;
+            top:0;
+        }
+        #header div{
+          padding-top:5px;
+                 }
+        #logo{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            display:inline;
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #logo img{
+          width:70px;
+          height:40px;
+          display:inline;
+          border-radius: 30%;
+        }
+        #box{
+          background-image: url(https://images2.alphacoders.com/901/thumb-1920-901414.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          background-color: black;
+          padding:10px 10px;
+        }
+        #content{
+          margin-top: 150px;
+          margin-left: 150px;
+          margin-bottom: 250px;
+          color: white;
+        }
+        #content h2{
+          font-family: 'Courier New', Courier, monospace;
+          text-transform: uppercase;
+        }
+        #content h1{
+          font-size: 50px;
+        }
+        #content button{
+          background-color: rgb(245, 245, 35);
+        }
+        .sty:hover{
+          border: 1px solid white;
+          border-radius:20px;
+          transform:translateY(3%);
+          transition: transform 0.3s ease;
+        }
+        .sty{
+          text-align: center;
+        }
+        #Category{
+          text-align: center;
+        }
+        #Category p{
+          font-size: 30px;
+        }
+        #item{
+          display:grid;
+          grid-template-columns: auto auto auto auto auto;
+          padding:10px 20px;
+        }
+        .fod img{
+          width:70%;
+          height:150px;
+          margin:10px 50px;
+        }
+        .fod{
+          margin-bottom: 50px;
+        }
+        .fod p{
+          margin:5px 120px;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        .animation:hover{
+          transform:translateY(-4%);
+          transition:transform 0.4s ease;
+        }
+        .fod:hover{
+          border:2px solid black;
+          border-radius: 10%;
+          transform: scale(1.1,1.1);
+          box-shadow: 2px 2px 2px aqua;
+          text-shadow: 2px 2px 4px black;
+          color:white;
+          transition:transform 0.4s ease 0.1ms;
+          cursor:pointer;
+        }
+        #footer{
+          display:grid;
+          grid-template-columns: auto;
+          grid-column-start: 1;
+          grid-column-end: 2;
+          background-color:#1a1a1a;
+          border:1px solid #1a1a1a;
+          border-radius: 2%;
+          color:#f1f1f1;
+        }
+        #Foot_head{
+ display: grid;
+ grid-template-columns: auto auto auto auto;
+ border-bottom: 1px solid black;
+ column-gap: 30px;
+        }
+        .icons{
+          display:inline-block;
+          width:30px;
+          height:20px;
+        }
+        a{
+          color:white;
+          text-decoration: none;
+        }
+        #Foot_head section{
+              padding:40px 20px;
+              margin-bottom: 20px;
+        }
+        @media (max-width:410px){
+          #header{
+            grid-template-columns:auto;
+            row-gap: 8px;
+          }
+          .sty{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            text-align: center;
+          }
+          #logo{
+            grid-column-end: 2;
+          }
+          #item{
+            grid-template-columns: auto;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+          }
+          .fod img{
+            width:300px;
+            height:300px;
+          }
+          #Foot_head{
+            grid-template-columns: auto auto;
+          }
+        }
+        @media(max-width:140px){
+          #Foot_head{
+            grid-template-columns: auto;
+          }
+        }
+    </style>
+</head>
+<body>
+    <main>
+      <div id="header">
+            <div id="logo"><img src="	https://img.freepik.com/premium-vector/kitchen-che…logo-design-vector-template_15146-1164.jpg?w=2000" alt="cruppted"> <div style="display: inline-block; margin:7px
+            30px;">Foodies</div></div>
+            <div class="sty"><a href="/foodDeliveryWebsite/website.html">Home Page</a></div>
+            <div class="sty">Single Restaurant</div>
+            <div class="sty"><a href="/foodDeliveryWebsite/login.html">Registration</a></div>
+            <div class="sty">Blog</div>
+            <div class="sty"><a href="/foodDeliveryWebsite/vendors.html">All Vendors</a></div>
+            <div class="sty">Select Location</div>
+            <div class="sty">Restaurant search</div>
+      </div>
+      <div id="box">
+        <div id="content">
+             <h2 class="animation">Learn How to Make</h2>
+             <h1 class="animation">Order Healthy and Fresh<br>Food Any Time</h1>
+             <p class="animation">Lorem ipsum has been the industry standard dummy <br> text ever since the 1500s.when an unknown</p>
+             <input type="search" name="" id="" placeholder="What items are you looking for?" style="width:200px">
+             <button>Select a location</button>
+        </div>
+      </div>
+      <div style="background-color: rgb(32,35,41,0.8);">
+        <section id="Category">Top Food<p>Our Category</p>
+        </section>
+        <section id="item">
+              <div class="fod">
+                <img src="https://cdn.pixabay.com/photo/2024/04/18/10/41/ai-generated-8704060_1280.jpg" alt=""><p>pizza</p>
+              </div>
+              <div class="fod">
+                <img src="https://www.tasteofhome.com/wp-content/uploads/2017/09/exps28800_UG143377D12_18_1b_RMS.jpg" alt=""><p>Hamburger</p>
+              </div>
+              <div class="fod">
+                <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/hakka-noodles-recipe.jpg" alt=""><p>Noodles</p>
+              </div>
+              <div class="fod">
+                <img src="https://as1.ftcdn.net/jpg/04/68/93/94/1000_F_468939407_9Q02XfVQJsKW0ZUEU4axdITcRgu7OPLd.jpg" alt=""><p>Chicken</p>
+              </div>
+              <div class="fod">
+<img src="https://assets.shortpedia.com/Voices/wp-content/uploads/2021/03/Momos-2.jpg" alt=""><p>Momos</p>
+              </div>
+              <div class="fod"><img src="https://bakingmischief.com/wp-content/uploads/2022/03/coffee-milkshake-square.jpg" alt=""><p>Shakes</p></div>
+              <div class="fod"><img src="https://s23209.pcdn.co/wp-content/uploads/2022/08/220602_DD_Easy-Pasta-Salad_025-1365x2048.jpg" alt=""><p>Pasta</p></div>
+              <div class="fod"><img src="https://petalscart.com/wp-content/uploads/2023/09/Chocolate-Loaded-Cake.jpg" alt=""><p>Cakes</p></div>
+              <div class="fod"><img src="https://www.momswhothink.com/wp-content/uploads/2023/04/iStock-944031134-600x600.jpg" alt=""><p>Broast</p></div>
+              <div class="fod"><img src="https://i.pinimg.com/originals/64/16/73/6416733eeda35bf65bfa757d6d4c39c0.jpg" alt=""><p>Samosa</p></div>
+        </section>
+      </div>
+      <div id="footer">
+        <div id="Foot_head">
+            <section>
+              <h1>About Foodies</h1>
+              <p>At Foodies, we believe in making quality food accessible. <br>Our platform helps users explore diverse cuisines, order from trusted vendors, and enjoy seamless food experiences.<br> Freshness and flavor — delivered to your doorstep.
+</p>
+<ul>
+  <li><img src="https://fastpng.com/images/file/logo-facebook-png-apw4qtjfd9y3aa55.png" alt="" class="icons">@foodies_Official</li>
+  <li><img src="https://www.kindpng.com/picc/m/754-7544584_downloa…-sticker-decal-instagram-free-transparent-new.png" alt="" class="icons">@foodies_official</li>
+  <li><img src="https://www.iseemaths.com/wp-content/uploads/2016/04/twitter-logo.png" alt="" class="icons">@foodies_official</li>
+</ul>
+            </section>
+            <section>
+             <h1>Quick Links</h1>
+             <ul>
+              <li><a href="/Projects/website.html" style="color: #f39c12;">Home Page</a></li>
+              <li>Single Restaurant</li>
+              <li><a href="/Projects/registration.html" style="color: #f39c12;">Registration</a></li>
+              <li>Blog</li>
+              <li><a href="/Projects/vendors.html" style="color:#f39c12">Vendors</a></li>
+             </ul>
+            </section>
+            <section>
+              <h1>Contact Us</h1>
+              <ul>
+                <li>📍 Address: 123 Anywhere St., Any City, State 12345li</li>
+                <li>📞 Phone:9310300737</li>
+                <li> Email:tanishque30@gmail.com</li>
+              </ul>
+            </section>
+            <section>
+              <h1>Newsletter Subcription</h1>
+              <ul>
+                <li>tanishque30@gmail.com</li>
+                <li><button>Subscribe</button></li>
+              </ul>
+            </section>
+        </div>
+        <div style="text-align: center;">Copyright: @2026 Foodies.All right reserved.</div>
+      </div>
+    </main>
+</body>
+</html>
