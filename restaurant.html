@@ -5,21 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurants</title>
     <style>
-body{
-    background:linear-gradient(135deg,#333333,#D3D3D3,#FFFFFF);
-
+        html,body{
+    min-width:fit-content;
+        }    
+ body{
+     background:linear-gradient(135deg,#333333,#D3D3D3,#FFFFFF);
+} 
+main{
+    display: grid;
+    grid-template-columns: auto ;
 }
 
         #header{
             display:grid;
             background-color: #36454F;
+            grid-column-start: 1;
+            grid-column-end: 2;
             position: sticky;
-            grid-template-columns: auto auto auto;
+            grid-template-columns: auto auto auto auto;
         }
-        #header div{
-            padding:5px 120px;
+        .link{
+            padding:5px 20px;
         }
-        #header div:hover{
+        .link:hover{
             border:2px solid white;
             border-radius:2%;
             transform: scale(1.05,1.05);
@@ -43,9 +51,7 @@ body{
            height:400px;
            border:2px solid black;
            border-radius: 10%;
-           position:relative;
-           top:0;
-           left:30%;
+           margin:20px auto;
            animation: slider 15s linear infinite;
            transition:animation 2s ease-in-out;
         }
@@ -54,17 +60,21 @@ body{
             flex-direction: row;
             border:1px solid white;
             color:white;
-            padding:30px 30px;
+            flex-shrink: 0;
+            padding:30px 20px;
             border-radius: 5%;
-            justify-content: space-between;
             text-align: center;
-            overflow-y: none;
+            overflow-y: hidden;
             overflow-x: auto;
             background-color: black;
             margin-bottom: 10px;
         }
+        #box{
+            grid-column-start:1;
+            grid-column-end:2;
+        }
         #contact img{
-            width:300px;
+            width:100%;
             height:200px;
         }
         #footer img{
@@ -73,8 +83,10 @@ body{
         }
         .item{
             border:1px solid white;
-            padding:10px 10px;
-            flex-basis: 25%;
+            padding:5px 5px;
+             flex-shrink: 0;
+             flex-grow: 0;
+             flex-basis: 25%;
             margin-left:10px;
             border-radius:5%;
             margin-right:10px;
@@ -82,7 +94,7 @@ body{
         .item:hover{
             transform: scale(1.1,1.1);
             transition: transform 1s ease;
-        }
+         }
           #footer{
           display:grid;
           grid-template-columns: auto;
@@ -102,7 +114,7 @@ body{
  grid-template-columns: auto auto auto auto;
  border-bottom: 1px solid black;
  column-gap: 30px;
-        }
+        } 
         @keyframes slider{
             0%{
                background-image: url(https://www.examveda.com/images/theory-image/current-affairs/2017/june/1498026324-taj-palace.png);
@@ -140,27 +152,42 @@ body{
             font-style: italic;
             text-transform: uppercase;
          }
+         #brand img{
+            width:40px;
+            height:30px;
+            display: inline-block;
+            margin-right: 5px;
+         }
+         #brand{
+            padding:5px 10px;
+            color:whitesmoke;
+         }
+         #brand:hover{
+                   transform: scale(1.1,1.1);
+                   transition: transform 1s ease-in-out;
+         }
     </style>
 </head>
 <body>
     <main>
         <div id="header">
-           <div><a href="index.html">Return Home</a></div>
-           <div><input type="search" placeholder="search your restaurant" id="search"></div>
-           <div><a href="vendor.html">Buy From your Favorite Vendor Directly</a></div>
+            <div id="brand"><img src="	https://img.freepik.com/premium-vector/kitchen-che…logo-design-vector-template_15146-1164.jpg?w=2000" alt="cruppted" ><p style="display: inline-block;">Foodies</p></div>
+           <div class="link"><a href="index.html">Return Home</a></div>
+           <div class="link"><input type="search" placeholder="search your restaurant" id="search"></div>
+           <div class="link"><a href="vendor.html">Buy From your Favorite Vendor Directly</a></div>
         </div>
         <div id="box">
             <h1>Top Listed Restaurants</h1>
             <div id="image">
             </div>
             <h1>Restaurants Contact Detail</h1>
-            <div id="contact">
+              <div id="contact">
                <div class="item"><img src="https://www.examveda.com/images/theory-image/current-affairs/2017/june/1498026324-taj-palace.png" alt="">
                 <h3>Taj Mahal Palace</h3>
                 <address>South Mumbai, Mumbai | 8 minutes walk to Colaba Market</address>
                 <p>Contact No:+91 2266395515</p>
             </div>
-               <div class="item"><img src="https://i.pinimg.com/originals/15/2c/9d/152c9d5ad0be7aafe9d14f07fe593b0e.jpg" alt="">
+                <div class="item"><img src="https://i.pinimg.com/originals/15/2c/9d/152c9d5ad0be7aafe9d14f07fe593b0e.jpg" alt="">
                 <h3>Ramada</h3>
                 <address>C-5, Sector 18, Vasundhara, Ghaziabad, Uttar Pradesh</address>
                 <p>Contact No:+91 088839 51777</p>
@@ -198,10 +225,10 @@ body{
                 <h3>The Oberoi</h3>
                 <address>Dr Zakir Hussain Marg, Delhi Golf Club, New Delhi, Delhi</address>
                 <p>Contact No: +91 011 2436 3030</p>
-               </div>
-            </div>
+               </div> 
+            </div>  
         </div>
-        <div id="footer">
+         <div id="footer">
         <div id="Foot_head">
             <section>
               <h1>About Foodies</h1>
@@ -240,7 +267,7 @@ body{
             </section>
         </div>
         <div style="text-align: center;">Copyright: @2026 Foodies.All right reserved.</div>
-      </div>
+      </div> 
     </main>
 </body>
 </html>
