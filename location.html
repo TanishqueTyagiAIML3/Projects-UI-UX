@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+    <style>
+        body{background: linear-gradient(135deg, #1e3c72, #2a5298, #a1c4fd);
+        }
+        main{
+            display: grid;
+            grid-template-columns: auto auto;
+            position: absolute;
+            top:20%;
+            left:30%;
+            border:1px solid black;
+            border-radius: 2%;
+            box-shadow: 1px 2px 1px inset aqua;
+            padding:50px 30px ;
+            color:white;
+        }
+          
+        #destiny h1{
+            text-align: center;
+            font-size: 30px;
+            font-style:initial;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            text-shadow: 2px 1px 1px black;
+        }
+        #destiny{
+            align-items: center;
+            padding:20px 30px;
+        }
+        iframe{
+          border-radius: 10%;
+        }
+        img{
+            width:30px;
+            height:30px;
+            border-radius: 60%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="destiny">
+            <h1><img src="https://i.pinimg.com/originals/06/3b/09/063b0913606edc9d617b28e384e3a309.png" alt="">Enter The Destination</h1>
+            <input type="search"  placeholder="Select Location" style="height: 25px; margin-left: 10px;">
+        </div>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.4523990408784!2d77.44115517509358!3d28.676110775640964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf1a255555555%3A0x45f6ff7c75a1d974!2sHotel%20Krishna%20Sagar!5e0!3m2!1sen!2sin!4v1771387873754!5m2!1sen!2sin" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+</body>
+</html>
