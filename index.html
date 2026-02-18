@@ -41,10 +41,12 @@
           border-radius: 30%;
         }
         #box{
-          background-image: url(https://images2.alphacoders.com/901/thumb-1920-901414.jpg);
+          /* background-image: url(https://images2.alphacoders.com/901/thumb-1920-901414.jpg);
           background-repeat: no-repeat;
           background-position: center;
-          background-size: contain;
+          background-size: contain; */
+          display:grid;
+          grid-template-columns: auto auto;
           background-color: black;
           padding:10px 10px;
         }
@@ -97,8 +99,8 @@
           font-family: Arial, Helvetica, sans-serif;
         }
         .animation:hover{
-          transform:translateY(-4%);
-          transition:transform 0.4s ease;
+          transform:scale(1.01,1.01);
+          transition:transform 1s ease;
         }
         .fod:hover{
           border:2px solid black;
@@ -125,6 +127,13 @@
  grid-template-columns: auto auto auto auto;
  border-bottom: 1px solid black;
  column-gap: 30px;
+        }
+        #video{
+          border-radius: 20%;
+          width:100%;
+          height:100%;
+          margin-top:0px;
+          margin-left:0px;
         }
         .icons{
           display:inline-block;
@@ -192,7 +201,10 @@
              <h1 class="animation">Order Healthy and Fresh<br>Food Any Time</h1>
              <p class="animation">Lorem ipsum has been the industry standard dummy <br> text ever since the 1500s.when an unknown</p>
              <input type="search" name="" id="" placeholder="What items are you looking for?" style="width:200px">
-             <button>Select a location</button>
+             <a href="location.html"><button>Select a location</button></a>
+        </div>
+        <div>
+          <video id="video" src="5820008-hd_1920_1080_25fps.mp4" muted loop autoplay></video>
         </div>
       </div>
       <div style="background-color: rgb(32,35,41,0.8);">
