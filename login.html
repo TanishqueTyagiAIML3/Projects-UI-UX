@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login To your Account</title>
     <style>
+        body{
+            background: linear-gradient(135deg, #1e3c72, #2a5298, #a1c4fd);
+        }
         main{
-            background-image: url(https://img.freepik.com/premium-photo/fairy-colors-background_476363-7537.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
             width:100%;
-           min-height:800px;
         }
         .box{
             background-color: rgb(0,0,0,0.5);
@@ -71,9 +69,9 @@
             <h1>Login Yourself</h1>
             <div class="content">
             <p>Your email</p>
-            <input type="email" placeholder="enter your email">
+            <input type="email" placeholder="enter your email" required>
             <p>Your Password</p>
-            <input type="password" placeholder="Enter your password">
+            <input type="password" placeholder="Enter your password" required>
             <p style="padding-left: 60px;">Forgot Password?</p>
             </div>
             <button id="login">
