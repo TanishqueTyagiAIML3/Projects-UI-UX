@@ -74,11 +74,21 @@
             <input type="password" placeholder="Enter your password" required>
             <p style="padding-left: 60px;">Forgot Password?</p>
             </div>
-            <button id="login">
+            <!-- <input type="submit" name="" id="login"  placeholder="Login" onclick="redirect()"> -->
+             <button id="login" onclick="redirect()">
                login
-            </button>
+            </button> 
             <div id="register"><a href="registration.html">Don't have account?register here</a></div>
         </div>
     </main>
+    <script>
+           function redirect()
+            {
+                let k=confirm("You are now directing to main page");
+                if(k===true)
+                window.location.replace("index.html");
+            }
+
+    </script>
 </body>
 </html>
