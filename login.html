@@ -32,6 +32,10 @@
         .content{
             padding-left: 70px;
         }
+        label{
+            display: block;
+            margin:10px 0px 15px 5px;
+        }
         #login{
             border:1px solid black;
             border-radius:10%;
@@ -68,16 +72,16 @@
         <div class="box">
             <h1>Login Yourself</h1>
             <div class="content">
-            <p>Your email</p>
+                <form action="">
+            <label for="">Your email</label>
             <input type="email" placeholder="enter your email" required>
-            <p>Your Password</p>
+            <label for="">Your Password</label>
             <input type="password" placeholder="Enter your password" required>
             <p style="padding-left: 60px;">Forgot Password?</p>
             </div>
             <!-- <input type="submit" name="" id="login"  placeholder="Login" onclick="redirect()"> -->
-             <button id="login" onclick="redirect()">
-               login
-            </button> 
+             <input type="submit" id="login" onclick="redirect()">
+        </form>
             <div id="register"><a href="registration.html">Don't have account?register here</a></div>
         </div>
     </main>
